@@ -1875,22 +1875,12 @@ img {
 .timer-section .inner-container .title-column {
     position: relative;
 }
-.cis_logo{
-    border-top-left-radius: 200px;
-    border-bottom-right-radius: 200px;
-    margin-top: -50px;
-    -webkit-box-shadow: 0px 0px 79px 5px rgba(130, 255, 5, 0.58);
-    -moz-box-shadow: 0px 0px 79px 5px rgba(130, 255, 5, 0.58);
-    box-shadow: 0px 0px 79px 5px rgba(130, 255, 5, 0.58);
-}
-
 
 .timer-section .inner-container .title-column .inner-column {
     position: relative;
     text-align: center;
     padding-top: 8px;
 }
-
 .timer-section .inner-container .title-column h2 {
     position: relative;
     color: #222222;
