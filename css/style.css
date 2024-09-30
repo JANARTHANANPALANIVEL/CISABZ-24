@@ -1,17 +1,5 @@
 
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Passion+One:400,700,900|Sacramento');
-/* font-family: 'Sacramento', cursive;
-font-family: 'Arimo', sans-serif;
-font-family: 'Passion One', cursive; */
-
-/*** 
-
-====================================================================
-	1. Resources / Css Files
-====================================================================
-
- ***/
-
 @import url('font-awesome.css');
 @import url('flaticon.css');
 @import url('animate.css');
@@ -37,7 +25,6 @@ font-family: 'Passion One', cursive; */
     font-weight: normal;
     font-style: normal;
 }
-
 /*** 
 
 ====================================================================
@@ -145,7 +132,7 @@ p {
 
 .auto-container {
     position: static;
-    max-width: 1200px;
+    max-width: 1300px;
     padding: 0px 15px;
     margin: 0 auto;
 }
@@ -697,6 +684,17 @@ img {
     width: 35%;
     border-radius: 10px;
 
+}
+.logot{
+    width: 20%;
+}
+.logot a{
+    color: white; 
+    font-family: suma;
+    font-size: 35px;
+    background: linear-gradient(52deg,  #3790C5 32%, #3768C5 39%, #21DBF9 49%, #3CF921 56%, #20A115 62%, #A11598 69%, #A11557 72%, #CB6409 74%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .main-header .main-box .logo-box {
     position: relative;
@@ -2044,6 +2042,10 @@ img {
     height: 137px;
     z-index: 1;
 }
+.txtone{
+    font-family: poppins;
+    margin-left: 2%;
+}
 
 .welcome-section .side-icons .icon-two {
     position: absolute;
@@ -2074,7 +2076,7 @@ img {
     color: #666666;
     font-size: 16px;
     line-height: 1.7em;
-    text-align: center;
+    text-align: justify;
     margin-bottom: 40px;
 }
 
@@ -2140,7 +2142,10 @@ img {
     position: relative;
     color: #ffffff;
     font-size: 36px;
-    margin-top: 90px;
+    margin-top: 0px;
+}
+..video-box .video-image .content h3:hover{
+    color: rgba(255, 255, 255, 0.474);
 }
 
 .video-box:before {
@@ -2164,14 +2169,17 @@ img {
     font-size: 20px;
     text-align: center;
     border-radius: 50%;
-    padding-left: 4px;
     display: inline-block;
     transition: all 900ms ease;
     -moz-transition: all 900ms ease;
     -webkit-transition: all 900ms ease;
     -ms-transition: all 900ms ease;
     -o-transition: all 900ms ease;
-    background-color: #ffa116;
+    background-color: #f95717;
+}
+.video-box .video-image .content .overlay-box span:hover{
+    background: #f95717a2;
+    border: 1px solid #f95717;
 }
 
 .video-box .ripple,
@@ -2244,7 +2252,7 @@ img {
 
 .welcome-section .lower-section {
     position: relative;
-    padding: 125px 0px 70px;
+    padding: 0px 0px 50px;
 }
 
 /* Feature Block */
@@ -2857,6 +2865,7 @@ img {
     line-height: 1.7em;
     margin-top: 10px;
 }
+
 
 /*** 
 
