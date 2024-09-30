@@ -1875,7 +1875,29 @@ img {
 .timer-section .inner-container .title-column {
     position: relative;
 }
+.inner-column img{
+    border-top-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+  
+  /* Animation for border shadow */
+  @keyframes shadowAnimation {
+    0% {
+      border-color: rgb(255, 0, 0); /* Red */
+      box-shadow: 0px 0px 20px 5px rgb(255, 0, 0);
+    }
+    50% {
+      border-color: rgb(0, 255, 0); /* Green */
+      box-shadow: 0px 0px 20px 5px rgb(0, 255, 0);
+    }
+    100% {
+      border-color: rgb(0, 0, 255); /* Blue */
+      box-shadow: 0px 0px 20px 5px rgb(0, 0, 255);
+    }
+  }
+  
 
+}
 .timer-section .inner-container .title-column .inner-column {
     position: relative;
     text-align: center;
