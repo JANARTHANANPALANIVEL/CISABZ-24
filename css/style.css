@@ -1,60 +1,3 @@
-/* ---------------------------------------
-
-[Master Stylesheet]
-
-Project:    MiExpo - Business Events and Digital Conference HTML Template
-Version:    1
-Last Change:    24/4/2019
-Primary Use:    Mi-Expo HTML Template
-
-------------------------------------------
-
-[Table of contents]
-
-1. Fonts
-2. Resources / Css Files
-3. Reset
-4. Global Settings
-5. Buttons Style / Two / Three
-6. Social Icons
-7. Scroll To Top style
-8. Section Title
-9. Main Header
-10. Main Slider Section
-11. Counter Section
-12. Welcome Section
-13. Speaker Section
-14. Events Section / Two
-15. Fluid Section One
-16. Price Section
-17. Gallery Section / Two
-18. Testimonial Section / Two
-19. Sponsors Section / Two
-20. News Section
-21. Newsletter Section
-22. Main Footer / Two
-23. Market Section
-24. Speaker Section Two
-25. Program Section
-26. Guest Section / Two
-27. Mission Section
-28. Business Section
-29. Festival Section
-30. Timer Section
-31. Video Section
-32. Page Title Section
-33. About Section
-34. Map Section
-35. Pricing Section
-36. Map Section
-37. Schedule Section
-38. Blog Section
-39. Blog Detail
-40. Sidebar Widgets
-41. Contact Info
-42. Contact Form Section
-
--------------------------------------------*/
 
 @import url('https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Passion+One:400,700,900|Sacramento');
 /* font-family: 'Sacramento', cursive;
@@ -288,17 +231,18 @@ img {
     color: #ffffff;
     font-size: 16px;
     font-weight: 600;
-    border-radius: 3px;
+    border-radius: 200px;
     letter-spacing: 0.05em;
     padding: 14px 30px 14px;
     border: 2px solid #ae1ec7;
     text-transform: uppercase;
     font-family: 'Arimo', sans-serif;
+
 }
 
 .btn-style-two:hover {
-    background: #ffa116;
-    border-color: #ffa116;
+    background: #ca8c2e;
+    border-color: #ca8c2e;
     color: #ffffff;
 }
 
@@ -749,7 +693,11 @@ img {
     position: relative;
     padding: 0px 40px;
 }
+.logo img{
+    width: 35%;
+    border-radius: 10px;
 
+}
 .main-header .main-box .logo-box {
     position: relative;
     float: left;
@@ -1844,7 +1792,11 @@ img {
 .banner-section .content-column {
     position: relative;
 }
-
+.inner-column img{
+    width: 80%;
+    margin-left: -40px;
+    margin-bottom: -30px;
+}
 .banner-section .content-column .inner-column {
     position: relative;
 }
@@ -1853,7 +1805,7 @@ img {
     position: relative;
     display: block;
     font-size: 66px;
-    color: #ffffff;
+    color: linear-grediant();
     font-weight: 700;
     line-height: 1.1em;
 }
@@ -1894,26 +1846,7 @@ img {
     position: relative;
 }
 
-.banner-section .info-column .list li {
-    position: relative;
-    color: #ffffff;
-    padding: 30px 15px;
-    display: inline-block;
-    text-align: center;
-    font-size: 18px;
-    min-width: 157px;
-    font-family: 'Belmonte-Rough';
-    background: url(../images/icons/icon-1.png) no-repeat;
-}
 
-.banner-section .info-column .list li:nth-child(2) {
-    background: url(../images/icons/icon-2.png) no-repeat;
-}
-
-.banner-section .info-column .list li:nth-child(3) {
-    margin-left: 50px;
-    background: url(../images/icons/icon-3.png) no-repeat;
-}
 
 /*** 
 
