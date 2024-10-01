@@ -1791,26 +1791,18 @@ img {
     position: relative;
 }
 .inner-column img{
-    width: 80%;
-    margin-left: -40px;
-    margin-bottom: -30px;
+    width: 60%;
+    align-items: center;
+    margin-bottom: -60px;
 }
 .banner-section .content-column .inner-column {
     position: relative;
 }
 
-.banner-section .content-column .inner-column h2 {
-    position: relative;
-    display: block;
-    font-size: 66px;
-    color: linear-grediant();
-    font-weight: 700;
-    line-height: 1.1em;
-}
 
 .banner-section .content-column .inner-column .text {
     position: relative;
-    font-size: 24px;
+    font-size: 34px;
     color: #ffffff;
     font-weight: 400;
     line-height: 1.14em;
@@ -1820,12 +1812,12 @@ img {
 
 .banner-section .content-column .inner-column .buttons-box {
     position: relative;
-    margin-top: 38px;
+    margin-top: 18px;
+    margin-left: 4%;
 }
 
 .banner-section .content-column .inner-column .buttons-box .theme-btn {
     position: relative;
-    float: left;
     margin-right: 15px;
     margin-bottom: 15px;
 }
@@ -2043,8 +2035,8 @@ img {
     z-index: 1;
 }
 .txtone{
-    font-family: poppins;
-    margin-left: 2%;
+    font-family: suma;
+    margin-left: 5%;
 }
 
 .welcome-section .side-icons .icon-two {

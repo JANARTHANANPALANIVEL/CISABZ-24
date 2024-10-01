@@ -330,12 +330,16 @@
         font-size: 50px;
     }
 }
-
 @media only screen and (max-width: 767px) {
     .main-header {
         position: relative;
-        background-color: #222222;
+        background-color: #ffffffa0;
+        border-bottom: rgb(132, 132, 132) 1px initial;
+
     }
+.logo img{
+    width: 60%;
+}
     .main-header .header-upper .outer-box {
         position: absolute;
         left: 0px;
