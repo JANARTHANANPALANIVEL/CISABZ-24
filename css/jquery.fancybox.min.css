@@ -867,3 +867,94 @@ li.fancybox-thumbs-loading {
         max-width: calc(100% - 10px)
     }
 }
+@charset "UTF-8";
+body.fancybox-active {
+    overflow: hidden;
+}
+
+body.fancybox-iosfix {
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.fancybox-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99992;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif;
+}
+
+.fancybox-bg {
+    background: rgba(30, 30, 30, 0.8);
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+
+.fancybox-is-open .fancybox-bg {
+    opacity: 1;
+}
+
+.fancybox-stage {
+    overflow: hidden;
+    z-index: 99994;
+}
+
+.fancybox-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    outline: none;
+    display: none;
+}
+
+.fancybox-slide--video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fancybox-slide--video iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.fancybox-close-small {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.fancybox-close-small:after {
+    content: "×";
+    font-size: 24px;
+    color: #fff;
+    transition: color 0.25s;
+}
+
+.fancybox-close-small:hover:after {
+    color: #ff5e5e;
+}
+
+@media (max-width: 800px) {
+    .fancybox-close-small {
+        top: 5px;
+        right: 5px;
+    }
+    
+    .fancybox-slide--video iframe {
+        max-width: 90%; /* Limits width on mobile */
+        max-height: 90%; /* Limits height on mobile */
+    }
+}

@@ -10,7 +10,7 @@
 @import url('magnific-popup.css');
 @import url('jquery.fancybox.min.css');
 @import url('jquery.mCustomScrollbar.min.css');
-/*** 
+/***
 
 ====================================================================
 	1. Fonts
@@ -25,7 +25,7 @@
     font-weight: normal;
     font-style: normal;
 }
-/*** 
+/***
 
 ====================================================================
 	3. Reset
@@ -40,7 +40,7 @@
     outline: none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	4. Global Settings
@@ -181,7 +181,7 @@ img {
     float: right;
 }
 
-/*** 
+/***
 
 ====================================================================
 	5. Buttons Style
@@ -214,24 +214,18 @@ img {
 .btn-style-two {
     position: relative;
     line-height: 24px;
-    background: #ae1ec7;
-    color: #ffffff;
+    font-family: 'Poppins', sans-serif; /* Ensure Poppins font is loaded */
     font-size: 16px;
-    font-weight: 600;
-    border-radius: 200px;
+    font-weight: 900;
+    border-radius: 200px; /* Rounded edges */
     letter-spacing: 0.05em;
-    padding: 14px 30px 14px;
-    border: 2px solid #ae1ec7;
-    text-transform: uppercase;
-    font-family: 'Arimo', sans-serif;
-
+    padding: 14px 30px; /* Vertical and horizontal padding */
+    text-transform: uppercase; /* Uppercase text */
+    margin-right: 45px; /* Right margin */
 }
 
-.btn-style-two:hover {
-    background: #ca8c2e;
-    border-color: #ca8c2e;
-    color: #ffffff;
-}
+
+
 
 /* Btn Style Three */
 
@@ -443,7 +437,7 @@ img {
     font-family: "Flaticon";
 }
 
-/*** 
+/***
 
 ====================================================================
 	6. Social Icons
@@ -518,7 +512,7 @@ img {
     height: auto;
 }
 
-/*** 
+/***
 
 ====================================================================
 	7. Scroll To Top style
@@ -553,7 +547,7 @@ img {
     background: #242f6c;
 }
 
-/*** 
+/***
 
 ====================================================================
 	8. Section Title
@@ -643,7 +637,7 @@ img {
     color: #ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	9. Main Header
@@ -689,7 +683,7 @@ img {
     width: 20%;
 }
 .logot a{
-    color: white; 
+    color: white;
     font-family: suma;
     font-size: 35px;
     background: linear-gradient(52deg,  #3790C5 32%, #3768C5 39%, #21DBF9 49%, #3CF921 56%, #20A115 62%, #A11598 69%, #A11557 72%, #CB6409 74%);
@@ -1378,7 +1372,7 @@ img {
     display: none;
 }
 
-/*** 
+/***
 
 ====================================================================
 			Mobile Menu
@@ -1583,7 +1577,7 @@ img {
     display: none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Search Popup
@@ -1729,7 +1723,7 @@ img {
     border-color: #ff006a;
 }
 
-/*** 
+/***
 
 ====================================================================
 	11. Banner Section
@@ -1790,10 +1784,15 @@ img {
 .banner-section .content-column {
     position: relative;
 }
-.inner-column img{
-
+.inner-column {
     align-items: center;
-    margin-bottom: -30px;
+    text-align: center;
+}
+.inner-column img{
+    margin-bottom: -40px;
+}
+.inner-column .text h2{
+    font-family: suma;
 }
 .banner-section .content-column .inner-column {
     position: relative;
@@ -1814,11 +1813,38 @@ img {
     margin-top: 18px;
     margin-left: 4%;
 }
-
-.banner-section .content-column .inner-column .buttons-box .theme-btn {
+.banner-section .content-column .inner-column .buttons-box 
+.glow-on-hover {
+    border: none;
+    outline: none;
+    color: #000000;
+    background:linear-gradient(45deg,rgb(208, 177, 0) 40px, silver 60px,rgb(208,177,0) 80px,silver 100px,rgb(208,177,0) 120px) ;
+    cursor: pointer;
     position: relative;
-    margin-right: 15px;
-    margin-bottom: 15px;
+    z-index: 0;
+    border-radius: 10px;
+}
+
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 2; /* Always visible */
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
 }
 
 .banner-section .info-column {
@@ -1837,7 +1863,7 @@ img {
 
 
 
-/*** 
+/***
 
 ====================================================================
 	Timer Section
@@ -1897,7 +1923,7 @@ img {
     text-align: right;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Countdown style
@@ -2004,7 +2030,7 @@ img {
     display: none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Welcome Section
@@ -2032,10 +2058,6 @@ img {
     width: 105px;
     height: 137px;
     z-index: 1;
-}
-.txtone{
-    font-family: suma;
-    margin-left: 5%;
 }
 
 .welcome-section .side-icons .icon-two {
@@ -2308,7 +2330,7 @@ img {
     margin-top: 12px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Speaker Section
@@ -2504,7 +2526,7 @@ img {
     margin-top: 30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Events Section
@@ -2518,7 +2540,7 @@ img {
     background-size: cover;
     background-repeat: no-repeat;
     background: #d3d3d3;
-}   
+}
 .events-section .section-icons {
     position: absolute;
     left: 0px;
@@ -2857,7 +2879,7 @@ img {
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Fluid Section One
@@ -2993,7 +3015,7 @@ img {
     background: url(../images/icons/icon-3.png) no-repeat;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Price Section
@@ -3240,7 +3262,7 @@ img {
     text-align: center;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Gallery Section
@@ -3416,7 +3438,7 @@ img {
 }
 
 
-/*** 
+/***
 
 ====================================================================
 	Tesimonial Section
@@ -3537,7 +3559,7 @@ img {
     font-size: 14px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sponsors Section
@@ -3612,7 +3634,7 @@ img {
     opacity: 1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	News Section
@@ -3793,7 +3815,7 @@ img {
     margin-left: 5px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Newsletter Section
@@ -4037,7 +4059,7 @@ img {
     font-size: 16px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Banner Section Two
@@ -4225,7 +4247,7 @@ img {
     background-position: left center;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Market Section
@@ -4410,7 +4432,7 @@ img {
     position: relative;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Section
@@ -4531,7 +4553,7 @@ img {
     background: url(../images/icons/icon-3.png) no-repeat;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Speaker Section Two
@@ -4811,7 +4833,7 @@ img {
     background-color: #ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Fluid Section Two
@@ -4940,7 +4962,7 @@ img {
     font-size: 40px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Accordion Style
@@ -5047,7 +5069,7 @@ img {
     margin-bottom: 0px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Programs Section
@@ -5261,7 +5283,7 @@ img {
     background-color: #a321b9;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Gallery Section Two
@@ -5333,7 +5355,7 @@ img {
     color: #ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Testimonial Section
@@ -5434,7 +5456,7 @@ img {
     bottom: 10%;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Digital Event Section
@@ -5545,7 +5567,7 @@ img {
     opacity: 1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Main Slider
@@ -5736,7 +5758,7 @@ img {
     transition-delay: 2200ms;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Guest Section
@@ -5825,7 +5847,7 @@ img {
     color: #222222;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Business Section
@@ -5981,7 +6003,7 @@ img {
     color: #ffffff;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Mission Section
@@ -6198,7 +6220,7 @@ img {
     color: rgba(255, 255, 255, 0.20);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Speaker Section Three
@@ -6327,7 +6349,7 @@ img {
     color: rgba(255, 255, 255, 0.50);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Price Section Two
@@ -6487,7 +6509,7 @@ img {
     transform: scale(1.1, 1.05);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Message Section
@@ -6601,7 +6623,7 @@ img {
     padding: 12px 45px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Dark Page
@@ -6667,7 +6689,7 @@ img {
     color: #cccccc;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Banner Section Three
@@ -6774,7 +6796,7 @@ img {
     margin: 0px 7px 14px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Festival Section
@@ -6880,7 +6902,7 @@ img {
     padding: 11px 30px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Featured Section
@@ -6960,7 +6982,7 @@ img {
     margin-top: 15px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Video Section
@@ -6984,7 +7006,7 @@ img {
     font-size: 60px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Speaker Section Four
@@ -7052,7 +7074,7 @@ img {
     color: rgba(255, 255, 255, 1);
 }
 
-/*** 
+/***
 
 ====================================================================
 	Counter Section Two
@@ -7079,7 +7101,7 @@ img {
     max-width: 1460px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sponsors Section Three
@@ -7135,7 +7157,7 @@ img {
     opacity: 1;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Page Title
@@ -7228,7 +7250,7 @@ img {
     display: none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Service Block
@@ -7319,7 +7341,7 @@ img {
     line-height: 1em;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sponsors Section Four
@@ -7439,7 +7461,7 @@ img {
     display: none;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Gallery Section
@@ -7871,7 +7893,7 @@ img {
     float: right;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Event Days Section
@@ -7892,7 +7914,7 @@ img {
     margin-bottom: 40px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Blog Page Section
@@ -7909,7 +7931,7 @@ img {
     margin-bottom: 80px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Styled Pagination
@@ -7954,7 +7976,7 @@ img {
     background-color: #a321b9;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Sidebar Page Container
@@ -8953,7 +8975,7 @@ img {
     line-height: 1.8em;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comments Area
@@ -9092,7 +9114,7 @@ img {
     margin-bottom: 0px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Comment Form
@@ -9166,7 +9188,7 @@ img {
     padding: 11px 33px;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Submit Info Section
@@ -9232,7 +9254,7 @@ img {
     color: #666666;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Map Section
@@ -9268,7 +9290,7 @@ img {
     color: #121212;
 }
 
-/*** 
+/***
 
 ====================================================================
 	Contact Form Section
