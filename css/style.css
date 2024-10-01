@@ -1799,7 +1799,6 @@ img {
     position: relative;
 }
 
-
 .banner-section .content-column .inner-column .text {
     position: relative;
     font-size: 24px;
@@ -2518,8 +2517,8 @@ img {
     padding: 95px 0px 100px;
     background-size: cover;
     background-repeat: no-repeat;
-}
-
+    background: #d3d3d3;
+}   
 .events-section .section-icons {
     position: absolute;
     left: 0px;
@@ -2796,7 +2795,6 @@ img {
     font-weight: 700;
     text-transform: uppercase;
 }
-
 .event-block .overlay-inner .content h3 a {
     position: relative;
     color: #ffffff;
@@ -3417,40 +3415,6 @@ img {
     animation-iteration-count: 2;
 }
 
-.gallery-block .inner-box .image .overlay-box .plus:hover {
-    color: #ffffff;
-}
-
-.gallery-block .inner-box .image .overlay-box .overlay-inner {
-    position: absolute;
-    left: 0px;
-    top: 30px;
-    width: 100%;
-    height: 100%;
-    display: table;
-    z-index: 1;
-    padding: 10px 10px;
-    vertical-align: middle;
-    opacity: 0;
-    transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -webkit-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    -o-transition: all 500ms ease;
-}
-
-.gallery-block .inner-box:hover .image .overlay-box .overlay-inner {
-    opacity: 1;
-    top: 0;
-    transition-delay: 500ms;
-}
-
-.gallery-block .inner-box .image .overlay-box .overlay-inner .overlay-content {
-    position: relative;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
-}
 
 /*** 
 
