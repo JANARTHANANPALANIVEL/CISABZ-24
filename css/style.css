@@ -1791,9 +1791,9 @@ img {
     position: relative;
 }
 .inner-column img{
-    width: 60%;
+
     align-items: center;
-    margin-bottom: -60px;
+    margin-bottom: -30px;
 }
 .banner-section .content-column .inner-column {
     position: relative;
@@ -1802,7 +1802,7 @@ img {
 
 .banner-section .content-column .inner-column .text {
     position: relative;
-    font-size: 34px;
+    font-size: 24px;
     color: #ffffff;
     font-weight: 400;
     line-height: 1.14em;
