@@ -584,17 +584,6 @@ img {
     font-size: 40px;
 }
 
-.sec-title .big-title {
-    position: relative;
-    color: #ececec;
-    font-weight: 700;
-    line-height: 1em;
-    font-size: 72px;
-    margin-top: -15px;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-}
-
 .sec-title .separator {
     position: relative;
     width: 60px;
@@ -2177,7 +2166,7 @@ img {
     font-size: 36px;
     margin-top: 0px;
 }
-..video-box .video-image .content h3:hover{
+.video-box .video-image .content h3:hover{
     color: rgba(255, 255, 255, 0.474);
 }
 
