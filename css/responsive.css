@@ -330,7 +330,7 @@
         font-size: 50px;
     }
 }
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1030px) {
     .main-header {
         position: relative;
         background-color: #ffffffa0;
