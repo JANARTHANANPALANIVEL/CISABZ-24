@@ -780,7 +780,8 @@
         font-size: 24px;
     }
     .event-block .inner-box {
-        padding-top: 20px;
+        margin-top: 20px;
+        padding-top: 0px;
         padding-bottom: 20px;
     }
     .page-title h2 {
@@ -1013,6 +1014,7 @@
     }
     .event-block .inner-box .image-column .inner-column {
         padding-left: 0px;
+        padding-top: 0px;
         min-height: auto;
     }
     .event-block .inner-box .image-column .image {
