@@ -2903,9 +2903,10 @@ img {
 .event-block .inner-box .info-column .text {
     position: relative;
     color: #666666;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 1.7em;
     margin-top: 10px;
+    text-align:center;
 }
 .image-column {
     display: flex;
