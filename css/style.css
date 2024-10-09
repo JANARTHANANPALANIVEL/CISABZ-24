@@ -17,6 +17,54 @@
 ====================================================================
 
  ***/
+/* Main button styling */
+.glow-button {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    background: linear-gradient(45deg, #ff006a 40%, #ff7300 60%);
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(255, 105, 180, 0.5), 0 0 20px rgba(255, 105, 180, 0.5), 0 0 30px rgba(255, 105, 180, 0.5);
+}
+
+/* Glowing hover effect */
+.glow-button:hover {
+    background: linear-gradient(45deg, #ff7300 40%, #ff006a 60%);
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.7), 0 0 30px rgba(255, 105, 180, 0.7), 0 0 40px rgba(255, 105, 180, 0.7);
+}
+
+/* Adding a glow animation */
+.glow-button:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    animation: glow-pulse 3s infinite ease-in-out;
+    transition: opacity 0.3s;
+    z-index: 0;
+}
+
+
+/* Positioning text above glow effect */
+.glow-button:hover:before {
+    opacity: 1;
+}
+
+.glow-button span {
+    position: relative;
+    z-index: 1;
+}
+
 
 @font-face {
     font-family: 'Belmonte-Rough';
@@ -2695,7 +2743,8 @@ img {
 
 .events-section .events-info-tabs .events-tabs .tabs-content .buttons-box {
     position: relative;
-    margin-top: 80px;
+    margin-top: 50px;
+    margin-bottom: 30px;
 }
 
 .events-section .events-info-tabs .events-tabs .tabs-content .buttons-box .theme-btn {
